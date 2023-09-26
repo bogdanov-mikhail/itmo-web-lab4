@@ -7,7 +7,7 @@
     ?>
     <div id="logout_container">
         <form method="post" action="logout.php">
-            <input id="submit-button" type="submit" class="user-form" value="Log Out">
+            <input id="submit-button" type="submit" class="form_input" value="Log Out">
         </form>
     </div>
     <?php endif;?>

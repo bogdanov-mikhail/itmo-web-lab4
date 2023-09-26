@@ -16,25 +16,29 @@ body {
     margin: 0;
 }
 
-#main {
+* {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.main {
     margin: 0;
     padding: 0;
     height: 90%;
     background: #E0E0E0;
 }
 
-#main-form {
+.form_container {
     margin: 0 auto;
     width: 60%;
 }
 
-* {
-    font-family: inherit;
-    font-size: inherit;
+.form {
+    margin: 0 auto;
+    width: 60%;
 }
 
-#user-form-name {
-    border: 0;
+.form_name_container {
     text-align: center;
     margin: 0 auto;
     padding: 10px;
@@ -42,7 +46,7 @@ body {
     font-size: 35px;
 }
 
-.user-form {
+.form_input {
     border-radius:10px;
     border: 1px solid grey;
     margin: 3px auto;
@@ -51,38 +55,33 @@ body {
     display: block;
 }
 
-.user-form:hover {
+.form_input:hover {
     border: 1px solid black;
 }
 
-#message {
+.form_textarea {
     resize: none;
     height: 10%;
 }
 
 #goods-label {
     font-size: 25px;
-    border: 0;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    width: 60%;
 }
 
-#goods {
+.form_select {
     display: block;
     overflow: auto;
 }
 
-.good {
+.form_option {
     color: dimgrey;
 }
 
-#submit-button {
+.form_button {
     background: lightgray;
 }
 
-#submit-button:hover {
+.form_button:hover {
     background: darkgray;
 }
 
@@ -92,31 +91,8 @@ body {
     margin: auto;
 }
 
-#auth-container {
+#auth_form_container {
     padding: 10%;
-}
-
-.main-auth {
-    margin: 0 auto;
-    width: 50%
-}
-
-#auth-label {
-    border: 0;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: 60%;
-    font-size: 35px;
-}
-
-.auth-form {
-    border-radius:10px;
-    border: 1px solid grey;
-    margin: 3px auto;
-    padding: 10px;
-    width: 80%;
-    display: block;
 }
 
 #sign-in-button {

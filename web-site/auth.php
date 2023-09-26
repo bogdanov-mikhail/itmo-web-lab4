@@ -9,14 +9,14 @@ require_once './boot.php'
 </head>
 <body>
 <?php require './header.php' ?>
-<div id="main">
-<div id="auth-container" class="main-auth">
-    <div id="auth-label">Авторизация</div>
-    <form action="auth-form.php" method="post" class="main-auth">
-        <input type="text" id="login" name="login" placeholder="Логин" class="auth-form" required="required">
-        <input type="password" id="password" name="password" placeholder="Пароль" class="auth-form" required="required">
-        <input id="sign-in-button" name="sign-in" class="auth-form" type="submit" value="SIGN IN">
-        <input id="sign-up-button" name="sign-up" class="auth-form" type="submit" value="SIGN UP">
+<div class="main">
+<div id="auth_form_container" class="form_container">
+    <div class="form_name_container">Авторизация</div>
+    <form action="auth-form.php" method="post" class="form">
+        <input type="text" id="login" name="login" placeholder="Логин" class="form_input" required="required">
+        <input type="password" id="password" name="password" placeholder="Пароль" class="form_input" required="required">
+        <input id="sign-in-button" name="sign-in" class="form_input form_button" type="submit" value="SIGN IN">
+        <input id="sign-up-button" name="sign-up" class="form_input form_button" type="submit" value="SIGN UP">
     </form>
 </div>
 </div>
