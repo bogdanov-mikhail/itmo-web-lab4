@@ -19,6 +19,7 @@ if ($_POST["sign-in"] ?? false) {
     $user = get_user_principal($login);
     if ($user == null) {
         $_SESSION["error"] = "Неправильный логин";
+        echo $_SESSION["error"];
         header('Location: /itmo-web-lab4/web-site/auth.php');
         die;
     }

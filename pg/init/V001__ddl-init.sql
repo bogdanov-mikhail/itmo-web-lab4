@@ -7,8 +7,6 @@ CREATE TABLE site.user
     password VARCHAR NOT NULL
 );
 
-CREATE INDEX user_login_index ON site.user(login);
-
 CREATE TABLE site.order
 (
     id         SERIAL PRIMARY KEY,
@@ -29,10 +27,12 @@ CREATE TABLE site.good
     localized_name VARCHAR
 );
 
-CREATE INDEX good_name_index ON site.good(name);
-
 CREATE TABLE site.order_to_good
 (
     order_id INTEGER NOT NULL REFERENCES site.order (id),
     good_id  INTEGER NOT NULL REFERENCES site.good (id)
 );
+
+CREATE INDEX good_name_index ON site.good(name);
+CREATE INDEX user_login_index ON site.user(login);
+

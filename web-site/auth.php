@@ -9,6 +9,7 @@ require_once './boot.php'
 </head>
 <body>
 <?php require './header.php' ?>
+<?php require './alert.php'?>
 <div class="main">
 <div id="auth_form_container" class="form_container">
     <div class="form_name_container">Авторизация</div>
