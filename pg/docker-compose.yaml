@@ -1,0 +1,14 @@
+version: '3.4'
+
+
+services:
+  pg:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: web
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: qwerty
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
