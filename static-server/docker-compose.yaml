@@ -3,8 +3,6 @@ version: '3.4'
 services:
   nginx:
     image: nginx:latest
-    environment:
-      PORT:
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html
       - ./capy.jpg:/usr/share/nginx/html/capy.jpg
